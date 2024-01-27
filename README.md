@@ -11,7 +11,7 @@ ErgoMonitor is an innovative system monitoring solution, expertly developed by P
 
 ## Installation
 Easily install ErgoMonitor by following these steps:
-1. Clone the repository: `git clone [Repository URL]`
+1. Clone the repository: `git clone https://github.com/Protoncracker/ErgoMonitor`
 2. Navigate to the ErgoMonitor folder: `cd ErgoMonitor`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run ErgoMonitor: `python ergomonitor.py`
