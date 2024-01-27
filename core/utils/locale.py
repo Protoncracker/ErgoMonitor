@@ -1,11 +1,12 @@
 from json import load, JSONDecodeError
 from os.path import join, dirname
+
 from requests import get, RequestException
 from locale import getdefaultlocale
 from time import tzname
 from datetime import datetime
 
-# Comment: WHY ISN'T IT WORKING?! WHAT
+# Comment: WHY IS IT WORKING?
 
 class LocaleManager:
     """
