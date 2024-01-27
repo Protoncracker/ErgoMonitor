@@ -1,6 +1,6 @@
 import ctypes
 import logging
-from ctypes import wintypes
+from ctypes import c_ulonglong
 
 class DiskManager:
     """
@@ -25,8 +25,8 @@ class DiskManager:
             dict: Disk space information including total, used, and free space (in bytes).
         """
         try:
-            free_bytes = wintypes.ULONGlong()
-            total_bytes = wintypes.ULONGlong()
+            free_bytes = c_ulonglong()
+            total_bytes = c_ulonglong()
             ctypes.windll.kernel32.GetDiskFreeSpaceExW(
                 path,
                 ctypes.byref(free_bytes),
@@ -37,7 +37,7 @@ class DiskManager:
             total_space = total_bytes.value
             free_space = free_bytes.value
             used_space = total_space - free_space
-
+                       
             return {
                 "path": path,
                 "total_space": total_space,
@@ -45,7 +45,13 @@ class DiskManager:
                 "free_space": free_space
             }
         except Exception as e:
-                self.logger.error(f"Error getting disk space: {e}")
-                return {}
+            self.logger.error(f"Error getting disk space: {e}")
+            return {}
 
-    # Additional methods for disk management can be added here.
+# Additional methods for disk management can be added here.
+
+if __name__ == "__main__":
+    # Example usage:
+    disk_manager = DiskManager()
+    result = disk_manager.get_disk_space()
+    print(result)
