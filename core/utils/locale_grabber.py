@@ -1,12 +1,9 @@
 from json import load, JSONDecodeError
 from os.path import join, dirname
-
 from requests import get, RequestException
-from locale import getdefaultlocale
+from locale import getlocale
 from time import tzname
 from datetime import datetime
-
-# Comment: WHY IS IT WORKING?
 
 class LocaleManager:
     """
@@ -47,7 +44,7 @@ class LocaleManager:
         Gather system-specific locale details like language, encoding, time zone, and current time.
         Returns a dictionary with these details.
         """
-        current_locale = getdefaultlocale()
+        current_locale = getlocale()
         time_zone = tzname[0]
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
