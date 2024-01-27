@@ -71,7 +71,6 @@ class NetTools:
             "rtt_ms": rtt_list
         }
 
-    # Example of a custom TCP/UDP operation
     def send_tcp_packet(self, target, port, payload=""):
         """
         Send a custom TCP packet to a specified target and port.
