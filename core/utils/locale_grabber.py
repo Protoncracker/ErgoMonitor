@@ -20,13 +20,20 @@ class LocaleManager:
     def get_global_ip_locale(self):
         """
         Determine the estimated locale based on the global IP address using an external service.
-        Returns the country code if successful, 'Unknown' otherwise.
+        Returns the country code if successful. If unsuccessful, tries to infer from system language.
+        If all else fails, returns 'XZ'.
         """
         try:
-            response = get("http://ip-api.com/json/") # Needs to be configured. Not working yet.
-            return response.json().get('countryCode', 'Unknown')
+            response = get("http://ip-api.com/json/")
+            country_code = response.json().get('countryCode', '')
+            if country_code:
+                return country_code
         except RequestException:
-            return "Unknown"
+            pass
+
+        # Fallback to the last two characters of the system language code
+        system_language = self.get_system_locale_details().get('language', 'XX')
+        return system_language[-2:].upper() if system_language else "XZ"
     
     def get_preferred_locale(self):
         """
@@ -47,10 +54,10 @@ class LocaleManager:
         current_locale = getlocale()
         time_zone = tzname[0]
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
+
         return {
-            "language": current_locale[0] if current_locale else "Unknown",
-            "encoding": current_locale[1] if current_locale else "Unknown",
+            "language": current_locale[0].upper() if current_locale and current_locale[0] else "XZ",
+            "encoding": current_locale[1] if current_locale and current_locale[1] else "Unknown",
             "time_zone": time_zone,
             "current_time": current_time
         }
