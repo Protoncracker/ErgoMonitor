@@ -1,5 +1,5 @@
 import logging
-from ctypes import c_ulonglong, windll
+from ctypes import c_ulonglong, windll, c_wchar_p, byref
 from sys import platform
 from psutil import disk_usage
 from cacheout import Cache
@@ -16,7 +16,7 @@ class DiskManager:
         """
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger('DiskManager')
-        self.cache = Cache(maxsize=23, ttl=5)  # Cache with TTL of 5 seconds and 23 calls. Arbitrary, but should be enough.
+        self.cache = Cache(maxsize=16, ttl=10)  # Cache with arbitrary values.
 
     def _fetch_disk_space(self, path):
         """
@@ -65,9 +65,9 @@ class DiskManager:
             free_bytes = c_ulonglong()
             total_bytes = c_ulonglong()
             windll.kernel32.GetDiskFreeSpaceExW(
-                ctypes.c_wchar_p(path),
-                ctypes.byref(free_bytes),
-                ctypes.byref(total_bytes),
+                c_wchar_p(path),
+                byref(free_bytes),
+                byref(total_bytes),
                 None
             )
 
