@@ -16,7 +16,7 @@ class DiskManager:
         """
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger('DiskManager')
-        self.cache = Cache(maxsize=32, ttl=15)  # Cache with TTL of 5 seconds
+        self.cache = Cache(maxsize=23, ttl=5)  # Cache with TTL of 5 seconds and 23 calls. Arbitrary, but should be enough.
 
     def _fetch_disk_space(self, path):
         """
