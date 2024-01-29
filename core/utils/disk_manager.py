@@ -3,20 +3,20 @@ from ctypes import c_ulonglong, windll, c_wchar_p, byref
 from sys import platform
 from psutil import disk_usage
 from cacheout import Cache
+from time import sleep
 
 class DiskManager:
     """
     DiskManager provides disk management and monitoring functionalities.
     It uses ctypes for Windows and psutil for Unix-like systems, with caching implemented via Cacheout.
     """
-
     def __init__(self):
         """
         Initialize the DiskManager instance.
         """
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger('DiskManager')
-        self.cache = Cache(maxsize=16, ttl=10)  # Cache with arbitrary values.
+        self.cache = Cache(maxsize=16, ttl=30)  # Cache with arbitrary values.
 
     def _fetch_disk_space(self, path):
         """
@@ -48,7 +48,10 @@ class DiskManager:
             return cached_result
 
         result = self._fetch_disk_space(path)
-        self.cache.set(path, result)
+        result_without_path = result.copy()
+        result_without_path.pop("path", None) 
+
+        self.cache.set(path, result_without_path)
         return result
 
     def _get_disk_space_windows(self, path):
@@ -61,6 +64,7 @@ class DiskManager:
         Returns:
             dict: Disk space information.
         """
+        sleep(6)
         try:
             free_bytes = c_ulonglong()
             total_bytes = c_ulonglong()
@@ -108,8 +112,8 @@ class DiskManager:
             return {"error": str(e)}
 
 # Additional methods for disk management will be added here.
-
 if __name__ == "__main__":
     disk_manager = DiskManager()
     result = disk_manager.get_disk_space()
     print(result)
+    
