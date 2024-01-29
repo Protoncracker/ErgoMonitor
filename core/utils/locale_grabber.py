@@ -16,20 +16,37 @@ class LocaleManager:
         Initialize the LocaleManager instance.
         """
         self.config_path = join(dirname(__file__), '..', 'configs', 'locale.json')
+        
+    def global_retriever(self):
+        """
+        Retrieve global locale information based on the IP address using an external service.
+
+        Returns:
+            dict: A dictionary with various locale-related information or an empty dict in case of failure.
+        """
+        keys_to_omit = {'org', 'as', 'status'}
+
+        try:
+            response = get("http://ip-api.com/json/")
+            if response.status_code == 200:
+                result = response.json()
+                return {k: v for k, v in result.items() if k not in keys_to_omit}
+            else:
+                return {}
+        except RequestException:
+            return {}
     
     def get_global_ip_locale(self):
         """
-        Determine the estimated locale based on the global IP address using an external service.
+        Determine the estimated locale based on the global IP address.
         Returns the country code if successful. If unsuccessful, tries to infer from system language.
         If all else fails, returns 'XZ'.
         """
-        try:
-            response = get("http://ip-api.com/json/")
-            country_code = response.json().get('countryCode', '')
-            if country_code:
-                return country_code
-        except RequestException:
-            pass
+        global_info = self.global_retriever()
+        country_code = global_info.get('countryCode', '')
+        
+        if country_code:
+            return country_code
 
         # Fallback to the last two characters of the system language code
         system_language = self.get_system_locale_details().get('language', 'XX')
