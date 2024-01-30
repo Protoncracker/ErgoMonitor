@@ -27,18 +27,27 @@ For a quick start, refer to [USAGE.md](docs/USAGE.md). Key usage steps include:
 - Interpreting the dashboard and reports for system analysis.
 
 ## Documentation
-Comprehensive documentation is available to guide you through ErgoMonitor's features and capabilities:
-- [API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md) - Details on API integration and usage.
-- [DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md) - Guide for developers interested in contributing to the project.
-- [INSTALLATION.md](docs/INSTALLATION.md) - Step-by-step installation instructions.
-- [SECURITY.md](docs/SECURITY.md) - Information on security features and protocols.
-- [FAQ.md](docs/FAQ.md) - Answers to frequently asked questions.
+ErgoMonitor offers a wide range of documentation to support users and developers:
+- [API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md) - Details on how to integrate and utilize the APIs within ErgoMonitor.
+- [CHANGELOG.md](docs/CHANGELOG.md) - Records all significant changes, enhancements, and bug fixes applied to ErgoMonitor.
+- [CODE_OF_CONDUCT.md](docs/CODE_OF_CONDUCT.md) - Outlines expectations for participation in our community, as well as the steps for reporting unacceptable behavior.
+- [CONTRIBUTING.md](docs/CONTRIBUTING.md) - Guidelines for those who wish to contribute to ErgoMonitor, including how to submit bugs, feature requests, and code contributions.
+- [DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md) - Provides developers with the necessary information to understand ErgoMonitor's architecture to use and contribute effectively.
+- [ErgoMonitor_structure.txt](docs/ErgoMonitor_structure.txt) - Offers a detailed representation of ErgoMonitor's project structure, helping developers navigate the codebase.
+- [FAQ.md](docs/FAQ.md) - Answers to Frequently Asked Questions, aiding users in troubleshooting common issues and understanding ErgoMonitor's features.
+- [INSTALLATION.md](docs/INSTALLATION.md) - Step-by-step guide to installing ErgoMonitor, ensuring users can get the application up and running smoothly.
+- [LICENSE.md](docs/LICENSE.md) - The full license text under which ErgoMonitor is distributed, clarifying the terms under which the software can be used, modified, and distributed.
+- [README.md](docs/README.md) - Provides an overview of ErgoMonitor, including its purpose, key features, and how to get started with the application.
+- [SECURITY.md](docs/SECURITY.md) - Information on the security measures in ErgoMonitor, including how to report security vulnerabilities.
+- [USAGE.md](docs/USAGE.md) - Detailed instructions on how to use ErgoMonitor, helping users make the most of its features.
+
+We encourage users and contributors to explore these documents to fully understand and effectively utilize ErgoMonitor.
 
 ## Contributions
-We encourage contributions to ErgoMonitor! If you're interested in contributing, please read our [CONTRIBUTING.md](docs/CONTRIBUTING.md) file for guidelines. Your ideas and work are welcomed and valued in this community-driven project.
+We warmly welcome contributions to ErgoMonitor! If you're interested in contributing, please consult our [CONTRIBUTING.md](docs/CONTRIBUTING.md) document for contribution guidelines. Every idea, big or small, helps in making ErgoMonitor better for everyone.
 
 ## License
-ErgoMonitor is released under the [MIT License](LICENSE.md). This permissive license allows for free use, modification, and distribution of the software, with proper attribution required to the original authors. It's an ideal choice for open-source projects, providing flexibility for users and contributors alike.
+ErgoMonitor is distributed under the [specify type of license] license. This license allows for free use and noncomercial distribution, with proper attribution to the original creators.
 
 ## Credits
 - [Protoncracker](https://github.com/protoncracker) - [email/contact information]
