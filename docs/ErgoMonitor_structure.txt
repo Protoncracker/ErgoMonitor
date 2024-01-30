@@ -1,7 +1,6 @@
 ErgoMonitor/
 │
 ├── README.md                    # Overview and general information of the project
-├── ErgoMonitor_structure.txt    # Detailed project structure representation
 ├── requirements.txt             # List of Python package dependencies
 │
 ├── ErgoMonitor.py               # Main entry point for the ErgoMonitor application
@@ -73,6 +72,7 @@ ErgoMonitor/
 │   ├── CODE_OF_CONDUCT.md       # Code of conduct
 │   ├── CONTRIBUTING.md          # Contributing guidelinesy
 │   ├── DEVELOPER_GUIDE.md       # Developer guide
+│   ├── ErgoMonitor_structure.txt# Detailed project structure representation
 │   ├── FAQ.md                   # Frequently asked questions
 │   ├── INSTALLATION.md          # Installation instructions
 │   ├── LICENSE.md               # License information
