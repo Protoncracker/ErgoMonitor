@@ -37,17 +37,17 @@ ErgoMonitor offers a wide range of documentation to support users and developers
 - [FAQ.md](docs/FAQ.md) - Answers to Frequently Asked Questions, aiding users in troubleshooting common issues and understanding ErgoMonitor's features.
 - [INSTALLATION.md](docs/INSTALLATION.md) - Step-by-step guide to installing ErgoMonitor, ensuring users can get the application up and running smoothly.
 - [LICENSE.md](docs/LICENSE.md) - The full license text under which ErgoMonitor is distributed, clarifying the terms under which the software can be used, modified, and distributed.
-- [README.md](docs/README.md) - Provides an overview of ErgoMonitor, including its purpose, key features, and how to get started with the application.
+- [README.md](docs/README.md) - Provides a full exhibit of ErgoMonitor, including its purpose, key features, and how to get started with the application in detail.
 - [SECURITY.md](docs/SECURITY.md) - Information on the security measures in ErgoMonitor, including how to report security vulnerabilities.
 - [USAGE.md](docs/USAGE.md) - Detailed instructions on how to use ErgoMonitor, helping users make the most of its features.
 
 We encourage users and contributors to explore these documents to fully understand and effectively utilize ErgoMonitor.
 
 ## Contributions
-We warmly welcome contributions to ErgoMonitor! If you're interested in contributing, please consult our [CONTRIBUTING.md](docs/CONTRIBUTING.md) document for contribution guidelines. Every idea, big or small, helps in making ErgoMonitor better for everyone.
+We warmly welcome contributions to ErgoMonitor! If you're interested in contributing, please consult our [CONTRIBUTING](docs/CONTRIBUTING.md) document for contribution guidelines. Every idea, big or small, helps in making ErgoMonitor better for everyone.
 
 ## License
-ErgoMonitor is distributed under the [specify type of license] license. This license allows for free use and noncomercial distribution, with proper attribution to the original creators.
+ErgoMonitor is distributed under the [xyz] license. This license allows for free use and noncomercial distribution, with proper attribution to the original creators.
 
 ## Credits
 - [Protoncracker](https://github.com/protoncracker) - [email/contact information]
