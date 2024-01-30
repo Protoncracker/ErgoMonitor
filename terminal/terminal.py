@@ -1,1 +1,0 @@
-# Visual interface that communicates with core.py. Only functions to be a visual interactive observer.

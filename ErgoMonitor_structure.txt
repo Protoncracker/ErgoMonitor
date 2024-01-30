@@ -1,0 +1,86 @@
+ErgoMonitor/
+│
+├── README.md                    # Overview and general information of the project
+├── ErgoMonitor_structure.txt    # Detailed project structure representation
+├── requirements.txt             # List of Python package dependencies
+│
+├── ErgoMonitor.py               # Main entry point for the ErgoMonitor application
+│
+├── core/                        # Core functionalities of ErgoMonitor
+│   ├── main/                    # Main application logic
+│   │   ├── core.py              # Main module that runs continuously
+│   │   └── EventNotifier.py     # Module for inter-module communication
+│   │
+│   ├── network/                 # Centralized network management
+│   │   └── network_manager.py   # Primary network management functions
+│   │
+│   ├── security/                # Security functionalities
+│   │   ├── security_checker.py  # System security checks
+│   │   └── intrusion_detection/ # Additional modules for intrusion detection
+│   │
+│   ├── system/                  # System performance monitoring
+│   │   ├── system_monitor.py    # Monitoring system performance
+│   │   └── resource_tracking/   # Additional modules for resource tracking
+│   │
+│   └── external/                # External communication
+│       └── external_communicator.py # Communicating with external APIs
+│
+├── utils/                       # Utility modules supporting the core
+│   ├── net_tools.py             # Advanced network operations (moved to utils)
+│   ├── network_speed.py         # Network speed measurements (moved to utils)
+│   ├── climate_analysis.py      # Climate-related information retrieval
+│   ├── disk_manager.py          # Disk management and monitoring
+│   ├── file_manager.py          # File system monitoring and management
+│   ├── locale_grabber.py        # Locale detection and retrieval
+│   ├── data_processor.py        # Data processing and analysis
+│   └── performance_analysis.py  # Utility for analyzing system performance
+│
+├── tests/                       # Test modules
+│   ├── test_main/
+│   │   └── ...                  # Tests for main components
+│   ├── test_network/
+│   │   └── ...                  # Tests for network components
+│   ├── test_security/
+│   │   └── ...                  # Tests for security components
+│   ├── test_system/
+│   │   └── ...                  # Tests for system components
+│   ├── test_external/
+│   │   └── ...                  # Tests for external communication
+│   └── test_utils/
+│       └── ...                  # Tests for utility components
+│   └── tester.py                # Centralized test execution and management
+│
+├── terminal/                    # Terminal interface
+│   ├── terminal.py              # Main terminal interface script
+│   ├── command_handler.py       # Handles and processes terminal commands
+│   ├── display_manager.py       # Manages the display/output of information
+│   ├── input_parser.py          # Parses and validates user input
+│   ├── ui_elements/             # Directory for UI element templates
+│   │   ├── menu.py              # Template for menu displays
+│   │   ├── prompt.py            # Template for various prompts
+│   │   └── ...                  # Other UI components
+│   └── assets/                  # Assets for the terminal interface
+│       └── ...                  # Images, fonts, etc.
+│
+├── configs/                     # Configuration files
+│   └── core.locale.json         # Example configuration file
+│   └── core.main.json           # Example configuration file
+│   └── terminal.main.json       # Example configuration file
+│
+├── docs/                        # Documentation
+│   ├── API_DOCUMENTATION.md     # API documentation
+│   ├── CHANGELOG.md             # Project changelog
+│   ├── CODE_OF_CONDUCT.md       # Code of conduct
+│   ├── CONTRIBUTING.md          # Contributing guidelinesy
+│   ├── DEVELOPER_GUIDE.md       # Developer guide
+│   ├── FAQ.md                   # Frequently asked questions
+│   ├── INSTALLATION.md          # Installation instructions
+│   ├── LICENSE.md               # License information
+│   ├── README.md                # General project overview
+│   ├── SECURITY.md              # Security policies
+│   └── USAGE.md                 # Usage guide
+│
+└── misc/                        # Miscellaneous files
+    ├── ErgoMonitor.ico          # Icon file
+    ├── ErgoMonitor.jpg          # JPEG image file
+    └── ErgoMonitor.png          # PNG image file
