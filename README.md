@@ -3,7 +3,7 @@
 ## Overview
 ErgoMonitor is a state-of-the-art system monitoring application, meticulously developed by [Protoncracker](https://github.com/protoncracker) and [SamuelSchutz13](https://github.com/SamuelSchutz13). Leveraging Python's powerful capabilities, it provides unparalleled insights into your computer's operations. ErgoMonitor is designed not just to monitor but to analyze - offering detailed reports on system health, performance metrics, and security status. Its proactive approach in identifying anomalies and potential threats makes it an indispensable tool for maintaining system integrity and efficiency.
 
-![ErgoMonitor Interface](misc/ErgoMonitor.png)
+<img src="misc/ErgoMonitor.png" width="50%" alt="ErgoMonitor Interface">
 
 ## Key Features
 - **Comprehensive System Monitoring**: Extensively tracks and reports on CPU, memory, storage, and network usage, giving a full picture of system health.
