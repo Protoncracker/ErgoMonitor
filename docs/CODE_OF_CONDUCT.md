@@ -1,0 +1,1 @@
+This document outlines the expectations for behavior and interaction within the project's community. It should include standards for respectful communication, a description of unacceptable behaviors, and the consequences for violating these standards. The code of conduct ensures a welcoming, respectful, and inclusive environment for all contributors and participants.

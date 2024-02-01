@@ -1,0 +1,1 @@
+This document should outline the security measures in place within ErgoMonitor, including how to securely report vulnerabilities, the project's security update policy, and any known security issues. We need to create a pattern/form on the how-to.

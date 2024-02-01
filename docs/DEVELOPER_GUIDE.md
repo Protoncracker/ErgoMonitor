@@ -1,0 +1,1 @@
+This guide should provide developers with an in-depth look at the project's architecture, codebase organization, development environment setup, and build processes. It might also include coding standards, testing procedures, and how to write documentation. 

@@ -1,0 +1,1 @@
+This file shall detail the available APIs within ErgoMonitor, including endpoints, request/response formats, authentication methods, error codes, and examples of use. It should serve as a guide for developers and users looking to integrate or utilize ErgoMonitor's APIs, providing all necessary technical specifications and usage scenarios.

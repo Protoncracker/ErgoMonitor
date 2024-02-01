@@ -1,0 +1,1 @@
+This file shall contain step-by-step instructions for installing ErgoMonitor, including prerequisites, required dependencies, and any compatible operating systems or platforms. It might also cover configuration options and initial setup procedures to get the project running smoothly for first-time users.

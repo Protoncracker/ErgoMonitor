@@ -1,0 +1,1 @@
+The usage documentation should provide detailed instructions on how to use ErgoMonitor, including command-line options, configuration settings, and operational workflows. It might also include examples and best practices to help users get the most out of the tool. Essential for ensuring users can effectively utilize all features and capabilities of ErgoMonitor.
