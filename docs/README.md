@@ -686,7 +686,7 @@ The ErgoMonitor team values open communication and is dedicated to providing the
 
 - **Discord/Slack Channels**: Engage with the ErgoMonitor community and our team in real-time on Discord or Slack. Get instant help, discuss features, and share your monitoring setups. Links to join: [Discord](https://discord.ergomonitor.example.com) | [Slack](https://slack.ergomonitor.example.com). (Yeah, no discord too. Will have in the near future!)
 
-We encourage feedback, questions, and participation from all our users and look forward to hearing from you!
+We encourage feedback, questions, and participation from all our users and look forward to hearing from you! 
 
 
 
