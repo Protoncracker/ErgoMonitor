@@ -1,4 +1,4 @@
-# ErgoMonitor
+# ErgoMonitor (Alpha 0.1)
 
 ErgoMonitor sprang from a unique collaboration between myself, [Protoncracker](https://github.com/Protoncracker), and [SamuelSchutz13](https://github.com/SamuelSchutz13). My ambition was to craft a tool that acts as both a daily health-lookup for users and a robust assistant for professionals needing tools and detailed analytics. SamuelSchutz13, meanwhile, was developing a monitoring solution to streamline and perfect his own workflow. Discovering the complementary nature of our projects, we decided to merge them, creating a tool greater than the sum of its parts.
 
