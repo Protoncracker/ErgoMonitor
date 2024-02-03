@@ -255,3 +255,72 @@ Without enabling Developer Mode, the settings available provide a balanced level
 *Developer Mode transforms ErgoMonitor into a highly adaptable tool, ready to meet the sophisticated demands of advanced users and IT professionals, all through a user-friendly GUI.*
 
 By offering a dual-layer approach to configuration—simplified settings for everyday users and an advanced Developer Mode for experts—ErgoMonitor ensures flexibility and accessibility.
+
+## API Reference
+
+ErgoMonitor's API not only facilitates comprehensive system monitoring but also extends its capabilities through integration with external APIs for various applications, including trivia as climate data analysis. Detailed documentation on all API endpoints, including those for external integrations, is available in the [API Documentation](docs/API_DOCUMENTATION.md).
+
+### Quick Reference to Key API Endpoints
+
+Here's an overview of essential ErgoMonitor API endpoints, including examples of how to use them:
+
+#### Retrieve System Metrics
+
+- **Endpoint**: `/api/system/metrics`
+- **Method**: `GET`
+- **Description**: Fetches current system metrics such as CPU usage, memory usage, and network statistics.
+- **Usage**:
+
+  ```bash
+  curl -X GET http://localhost:8080/api/system/metrics
+  ```
+
+#### Initiate Security Scan
+
+- **Endpoint**: `/api/security/scan`
+- **Method**: `POST`
+- **Description**: Triggers a security scan to detect vulnerabilities and threats.
+- **Usage**:
+
+  ```bash
+  curl -X POST http://localhost:8080/api/security/scan -d "type=full"
+  ```
+
+#### Execute Performance Optimization
+
+- **Endpoint**: `/api/performance/optimize`
+- **Method**: `POST`
+- **Description**: Performs recommended optimizations to improve system performance.
+- **Usage**:
+
+  ```bash
+  curl -X POST http://localhost:8080/api/performance/optimize
+  ```
+
+#### Modify Monitoring Settings
+
+- **Endpoint**: `/api/settings/update`
+- **Method**: `POST`
+- **Description**: Adjusts ErgoMonitor's settings according to user preferences.
+- **Usage**:
+
+  ```bash
+  curl -X POST http://localhost:8080/api/settings/update -d "setting=cpu_alert_threshold&value=75"
+  ```
+
+### Integrating External APIs
+
+ErgoMonitor supports configuring external APIs for enhanced functionality, such as accessing climate data. Users can configure these integrations in the Python version of ErgoMonitor to incorporate data from various sources into their monitoring workflow.
+
+#### Configuring External API Integration
+
+- **Objective**: To integrate an external climate data API for environmental monitoring.
+- **Steps**:
+  1. Access the 'Settings' tab in ErgoMonitor's GUI.
+  2. Navigate to the 'External APIs' section.
+  3. Enter the API details for the climate data service, including the API key if required.
+  4. Save the configuration to enable data fetching from the specified service.
+
+*Note: Detailed steps and code snippets for configuring and utilizing external APIs are provided in the [API Documentation](docs/API_DOCUMENTATION.md).*
+
+This section outlines the primary ways to interact with ErgoMonitor's API and configure external integrations, offering users and developers the flexibility to tailor the system monitoring experience to their specific needs. For a comprehensive list of endpoints, in-depth configuration guides, and additional examples, please refer to the full API documentation.
