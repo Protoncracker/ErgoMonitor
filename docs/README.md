@@ -242,7 +242,7 @@ Without enabling Developer Mode, the settings available provide a balanced level
 
 **Objective**: Enable Developer Mode for a better configuration capability.
 
-1. **Enabling Developer Mode**: For users requiring in-depth customization and control, the 'Settings' section offers a 'Developer Mode' option. When activated, this mode reveals a vast array of advanced settings, allowing for precise adjustments to monitoring parameters, alert configurations, and data analysis thresholds. This feature caters to power users and IT professionals seeking *granular* oversight over system monitoring practices.
+1. **Enabling Developer Mode**: For users requiring in-depth customization and control, the 'Settings' section offers a 'Developer Mode' option. When activated, this mode reveals a vast array of advanced settings, allowing for precise adjustments to monitoring parameters, alert configurations, and data analysis thresholds. This feature caters to power users and IT professionals seeking *granular* oversight over system monitoring and security practices.
 
 2. **Tailoring ErgoMonitor to Your Needs**: With Developer Mode enabled, dive into the depths of ErgoMonitor's customizable settings. Adjust how frequently the system scans for updates, fine-tune which metrics trigger alerts, and specify detailed security analysis criteria. This level of customization ensures that ErgoMonitor can adapt to the unique demands of various computing environments, from high-performance gaming rigs to critical business infrastructure.
 
