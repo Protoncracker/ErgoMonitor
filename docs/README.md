@@ -322,3 +322,95 @@ ErgoMonitor supports configuring external APIs for enhanced functionality, such 
 *Note: Detailed steps and code snippets for configuring and utilizing external APIs are provided in the [API Documentation](docs/API_DOCUMENTATION.md).*
 
 For a comprehensive list of endpoints, in-depth configuration guides, and additional examples, please refer to the full API documentation.
+
+## Configuration Files and Customization
+
+ErgoMonitor is engineered with flexibility and user customization in mind, employing a streamlined approach to configuration through two distinct types of configuration files: core files and terminal files. This section provides guidance on how to configure ErgoMonitor to meet your specific requirements, leveraging these configuration files.
+
+### Understanding Configuration Files
+
+ErgoMonitor simplifies its configuration process through the use of two primary file types, each serving a specific purpose in the application's setup and operation:
+
+- **Core Configuration Files**: These files are pivotal for the operation of ErgoMonitor's core functionalities, including system monitoring, network analysis, security checks, and locale settings. Core configuration files dictate how the core aspects of ErgoMonitor function and interact with your system.
+
+- **Terminal Configuration Files**: These files are dedicated to the customization of the user interface and user-specific preferences. This includes visual themes, layout preferences, and any user-specific settings that affect how information is displayed and interacted with in the ErgoMonitor terminal interface.
+
+### Configuring Core Settings
+
+Core configuration files are located in the `configs/` directory and are essential for tailoring ErgoMonitor's functionality to your environment:
+
+1. **Locale and Operational Settings (`core.locale.json`)**: Adjust locale settings, including language preferences and regional formats, to match your geographical location and preferences.
+   
+2. **System Monitoring Parameters (`core.main.json`)**: Configure system monitoring thresholds, intervals, and parameters that determine how ErgoMonitor assesses and reports on your system's health and performance.
+
+To modify core settings:
+
+- Navigate to the `configs/` directory.
+- Select and edit the `.json` file corresponding to the settings you wish to adjust, using a text editor.
+- Follow the comments within each file as guidelines for permissible values and setting descriptions.
+- Save your changes and restart ErgoMonitor to apply them.
+
+### Configuring Terminal Settings
+
+Terminal configuration files focus on the ErgoMonitor's user interface and are also found within the `configs/` directory:
+
+1. **User Interface Preferences (`terminal.main.json`)**: Customize the appearance of the ErgoMonitor terminal, including color schemes, font sizes, and layout configurations to enhance user experience and accessibility.
+
+To adjust terminal settings:
+
+- Open the `terminal.main.json` file from the `configs/` directory in a text editor.
+- Edit the settings to match your visual preferences and user interface requirements.
+- Ensure to save your changes and, if necessary, restart ErgoMonitor to see the effects of your adjustments.
+
+### Tips for Effective Configuration
+
+- **Backup Before Modifying**: Always create backups of configuration files before making changes. This precaution ensures you can revert to a previous state if needed.
+- **Consult Documentation**: Refer to the inline comments and documentation provided within each configuration file for guidance on the available settings and their impacts.
+- **Restart After Changes**: Some changes, especially those in core configuration files, may require a restart of ErgoMonitor to become effective.
+
+By leveraging the distinction between core and terminal configuration files, ErgoMonitor offers a robust yet intuitive means for users to customize and optimize their monitoring experience according to individual needs and preferences.
+
+## Guide to the Settings Tab in ErgoMonitor GUI
+
+The Settings tab in the ErgoMonitor GUI is your central location for configuring the application to better meet your specific monitoring needs and preferences. This guide will walk you through accessing and using the Settings tab to customize ErgoMonitor's functionality.
+
+### Accessing the Settings Tab
+
+1. **Open ErgoMonitor**: Start the ErgoMonitor application on your device.
+2. **Navigate to the Settings Tab**: From the main dashboard of ErgoMonitor, locate and click on the `Settings` tab. This tab is usually found in the top menu or within a side navigation pane, depending on the layout of the GUI.
+
+### Navigating the Settings Tab
+
+The Settings tab is organized into various sections, each dedicated to a different aspect of the application's configuration:
+
+- **General Settings**: Adjust basic application settings such as startup behavior, default monitoring intervals, and notification preferences.
+  
+- **Network Monitoring**: Configure settings related to network analysis and monitoring, including network interface preferences, bandwidth usage alerts, and traffic analysis parameters.
+  
+- **System Health**: Customize how ErgoMonitor tracks and reports on system health, including CPU, memory usage, disk space, and more. Set thresholds for alerts and specify monitoring frequency.
+  
+- **Security and Privacy**: Define security parameters, including intrusion detection settings, audit trails, and privacy options to ensure data protection.
+  
+- **Locale and Language**: Select your preferred language and regional settings to localize the application interface and data formats.
+  
+- **User Interface**: Customize the appearance of the ErgoMonitor GUI, including themes, color schemes, and layout options to enhance usability and visual appeal.
+
+### Modifying Settings
+
+To modify a setting within any section:
+
+1. **Select the Section**: Click on the section title to view all settings related to that category.
+2. **Find the Setting**: Scroll through the list of settings until you find the one you wish to change.
+3. **Make Your Adjustment**: Depending on the setting, you may either toggle a switch, select from a dropdown menu, or enter a new value in a text field.
+4. **Apply Changes**: Look for an `Apply` or `Save` button near the bottom of the section or window. Click this button to save your changes.
+
+### Tips for Using the Settings Tab
+
+- **Explore All Sections**: Take the time to explore all sections within the Settings tab to fully understand the extent of customization available in ErgoMonitor.
+- **Use Tooltips**: Hover over question marks or info icons next to each setting for tooltips that provide additional information and guidance.
+- **Restart May Be Required**: Some changes might require a restart of ErgoMonitor to take effect. The application will notify you if a restart is necessary.
+- **Backup Your Configuration**: Before making significant changes, consider exporting or backing up your current configuration. This precaution allows you to easily revert to a previous setup if needed.
+
+By familiarizing yourself with the Settings tab and understanding how to navigate and adjust the various settings, you can optimize ErgoMonitor's performance and utility for your specific monitoring needs.
+
+
