@@ -258,6 +258,8 @@ ErgoMonitor's API not only facilitates comprehensive system monitoring but also 
 
 ### Quick Reference to Key API Endpoints
 
+NOTE: In order to use the ErgoMonitor's internal API system, you must have the **Insider API** setting configurated.
+
 Here's an overview of essential ErgoMonitor API endpoints, including examples of how to use them:
 
 #### Retrieve System Metrics
@@ -319,4 +321,4 @@ ErgoMonitor supports configuring external APIs for enhanced functionality, such 
 
 *Note: Detailed steps and code snippets for configuring and utilizing external APIs are provided in the [API Documentation](docs/API_DOCUMENTATION.md).*
 
-This section outlines the primary ways to interact with ErgoMonitor's API and configure external integrations, offering users and developers the flexibility to tailor the system monitoring experience to their specific needs. For a comprehensive list of endpoints, in-depth configuration guides, and additional examples, please refer to the full API documentation.
+For a comprehensive list of endpoints, in-depth configuration guides, and additional examples, please refer to the full API documentation.
