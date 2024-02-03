@@ -148,7 +148,18 @@ cd ErgoMonitor
 
 You are now in the root directory of the ErgoMonitor project. Good job.
 
-### Step 3: Install Dependencies
+### Step 3: Set Up the Development Environment
+
+(Optional) For an organized setup, especially if working on multiple Python projects, setting up a virtual environment is recommended:
+
+```bash
+python -m venv env
+source env/bin/activate  # On Windows, use `env\Scripts\activate`
+```
+
+After activating the virtual environment, proceed with installing dependencies as described in Step 4.
+
+### Step 4: Install Dependencies
 
 ErgoMonitor relies on various Python packages. Install them by executing:
 
@@ -157,17 +168,6 @@ pip install -r requirements.txt
 ```
 
 This reads the `requirements.txt` file and installs the necessary Python packages, ensuring ErgoMonitor has everything it needs to run smoothly.
-
-### Step 4: Set Up the Development Environment
-
-(Optional) For an organized setup, especially if working on multiple Python projects, setting up a virtual environment is recommended::
-
-```bash
-python -m venv env
-source env/bin/activate  # On Windows, use `env\Scripts\activate`
-```
-
-After activating the virtual environment, proceed with installing dependencies as described in Step 3.
 
 ### Step 5: Run ErgoMonitor
 
