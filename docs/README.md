@@ -25,7 +25,7 @@ ErgoMonitor tackles a variety of critical issues that plague computer users:
 
 ### Target Users
 
-ErgoMonitor is engineered to meet the nuanced demands of specialized IT roles, enhancing their capacity to manage, secure, and optimize computing environments:
+ErgoMonitor is engineered to meet the vast userbase of computer users and nuanced demands of specialized IT roles, enhancing their capacity to manage, secure, and optimize computing environments:
 
 - **Everyday Users**: For individuals who may not have technical backgrounds but are keen on maintaining their computer's health, ErgoMonitor offers simple, actionable insights. It demystifies the complexities of system performance and security, presenting data in an easily digestible format. This enables everyday users to make informed decisions about their digital hygiene, enhancing their overall computing experience without the need for deep technical knowledge.
 
@@ -39,7 +39,7 @@ ErgoMonitor is engineered to meet the nuanced demands of specialized IT roles, e
 
 - **Technical Maintenance Engineers**: These individuals are at the forefront of maintaining the operational integrity of IT systems. ErgoMonitor aids them by providing detailed diagnostics and predictive maintenance alerts, enabling early intervention for hardware or software issues. Its comprehensive logging and reporting capabilities also assist in post-issue analysis, helping to prevent future occurrences.
 
-- **Cybersecurity Analysts and Specialists**: In the realm of cybersecurity, ErgoMonitor offers tools for deep analysis of network traffic, system logs, and anomaly detection, and more, essential for identifying sophisticated cyber threats. It supports incident response teams by automating the collection of evidence and facilitating the containment of breaches. The platform's emphasis on proactive threat detection aligns with the cybersecurity mandate to stay ahead of potential attackers.
+- **Cybersecurity Analysts and Specialists**: In the realm of cybersecurity, ErgoMonitor offers tools for deep analysis of network traffic, system logs, anomaly detection, and more essential tools for identifying sophisticated cyber threats. It supports incident response teams by automating the collection of evidence and facilitating the containment of breaches. The platform's emphasis on proactive threat detection aligns with the cybersecurity mandate to stay ahead of potential attackers.
 
 - **System and Network Administrators**: For these professionals, ErgoMonitor provides a centralized view of system health, network performance, and resource utilization. It enables the automation of routine monitoring tasks, freeing administrators to focus on strategic IT initiatives. The tool's ability to customize alerts based on specific thresholds or events ensures that administrators can maintain system stability and network efficiency effectively.
 
@@ -51,7 +51,7 @@ ErgoMonitor is engineered to meet the nuanced demands of specialized IT roles, e
 
 TL;DR: It's designed for a wide range of users, from those with no technical background to IT professionals. It simplifies the maintenance of computer health and enhances security, making it accessible for everyday users, gamers, tech enthusiasts, SMBs, NPOs, and various IT specialists, ensuring that everyone can focus on what's most important to them without getting overwhelmed by complexity.
 
-Whether you are looking to optimize your gaming experience, secure sensitive data, or manage IT infrastructure, ErgoMonitor provides the insights and tools needed to maintain peak system performance. It's not just about monitoring; it's about empowering you with the knowledge to act decisively. [Discover how](https://github.com/Protoncracker/ErgoMonitor) ErgoMonitor can streamline your digital life, ensuring that technology works for you as you navigate the complexities of the digital world if you haven't just yet.
+Whether you are looking to optimize your gaming experience, secure sensitive data, or manage IT infrastructure, ErgoMonitor provides the insights and tools needed to maintain peak system performance. It's not just about monitoring; it's about empowering you with the knowledge to act decisively. [Discover how](https://github.com/Protoncracker/ErgoMonitor) ErgoMonitor can streamline your digital life, ensuring that technology works for you as you navigate the complexities of the digital world, if you haven't just yet.
 
 
 ## Key Features and Capabilities
@@ -59,8 +59,6 @@ Whether you are looking to optimize your gaming experience, secure sensitive dat
 ErgoMonitor is designed to seamlessly integrate into the daily routines of its users, providing a robust suite of features that cater to a wide spectrum of system monitoring needs. Here's a deeper look into its core functionalities and the distinct benefits it offers over similar tools in the market:
 
 ### Core Functionality and Benefits
-
-At its core, ErgoMonitor provides:
 
 - **Real-Time System Monitoring**: Offering immediate insights into system performance, ErgoMonitor keeps you informed on critical metrics such as CPU usage, memory allocation, disk activity, and network status. This real-time data allows users to quickly identify and address issues that could impact system functionality and efficiency. By keeping a constant eye on these metrics, ErgoMonitor ensures that users can react promptly to changes, maintaining optimal system performance.
 
@@ -158,9 +156,7 @@ ErgoMonitor relies on various Python packages. Install them by executing:
 pip install -r requirements.txt
 ```
 
-This reads the `requirements.txt` file and installs the necessary Python packages, ensuring Erg
-
-oMonitor has everything it needs to run smoothly.
+This reads the `requirements.txt` file and installs the necessary Python packages, ensuring ErgoMonitor has everything it needs to run smoothly.
 
 ### Step 4: Set Up the Development Environment
 
