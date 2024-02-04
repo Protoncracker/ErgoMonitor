@@ -161,3 +161,4 @@ class ReadmeManager:
 # manager.remove_back_links()
 # manager.delete_toc_section()
 # manager.add_generated_toc()
+# manager.compare_files('README.md', 'READMEc.md')
