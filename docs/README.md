@@ -647,21 +647,17 @@ Together, with the help of the community and adherence to our security policies,
 
 ## License
 
-ErgoMonitor is distributed under the terms of the Winux "COPYING" License. This license permits users to use, modify, and distribute ErgoMonitor freely, under certain conditions specified within the license agreement.
-
-For the complete license text, including all terms and conditions, please refer to the [LICENSE.md](./LICENSE.md) document included with ErgoMonitor.
-
-The Winux "COPYING" License is designed to ensure that ErgoMonitor remains free and open, promoting collaboration and sharing within the community while protecting the rights of contributors and users.
+ErgoMonitor is distributed under the ProtonLicense. This free, copyleft license is designed to ensure that ErgoMonitor and any derivative works remain open and free, encouraging innovation and collaboration within the community while safeguarding the rights of users and contributors.
 
 ### Key Highlights
 
-- **Usage**: Users are free to use ErgoMonitor for personal or commercial purposes.
-- **Modification**: Users can modify ErgoMonitor, allowing for customization and improvement.
+- **Usage**: Users can freely use ErgoMonitor for both personal and commercial purposes, under the terms of the ProtonLicense.
+- **Modification**: Encourages customization and improvements by allowing modifications to ErgoMonitor.
 - **Distribution**: Users are allowed to distribute original or modified versions of ErgoMonitor, ensuring the software remains accessible to all.
 
-Please note, the summary provided here does not replace the full license text. We strongly encourage you to read the [LICENSE.md](./LICENSE.md) document to fully understand your rights and responsibilities under the Winux "COPYING" License.
+For full details of the terms and conditions, including all rights and obligations, please refer to the LICENSE.md file included with ErgoMonitor. This summary does not replace the full license text, and we strongly recommend reading the complete ProtonLicense to fully understand your rights and responsibilities.
 
-For more information on the licensing, including any exemptions or additional permissions, consult the full license agreement or reach out to our legal department for clarification.
+For additional information on licensing, including any exceptions or granted permissions, consult the full license document or contact our legal department for clarification.
 
 ## Acknowledgements and Credits
 
