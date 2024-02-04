@@ -52,7 +52,7 @@ Thus, ErgoMonitor is more than its name — it's a testament to our goal of deli
         - [Modifying Settings](#modifying-settings)
         - [Tips for Using the Settings Tab](#tips-for-using-the-settings-tab)
     - [Extending ErgoMonitor](#extending-ergomonitor)
-        - [Understanding ErgoMonitorâ€™s Architecture](#understanding-ergomonitorâ€™s-architecture)
+        - [Understanding ErgoMonitor’s Architecture](#understanding-ergomonitor’s-architecture)
         - [Extension Points and Plugin Mechanisms](#extension-points-and-plugin-mechanisms)
         - [Guidelines for Developing Extensions](#guidelines-for-developing-extensions)
         - [Submitting Contributions](#submitting-contributions)
