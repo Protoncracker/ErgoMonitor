@@ -1,3 +1,30 @@
+
+# Table of Contents
+- [ErgoMonitor (Alpha 0.1)](#ergomonitor-alpha-01)
+- [Detailed Overview](#detailed-overview)
+  - [The Problems It Aims to Solve](#the-problems-it-aims-to-solve)
+  - [Target Users](#target-users)
+- [Key Features and Capabilities](#key-features-and-capabilities)
+  - [Core Functionality and Benefits](#core-functionality-and-benefits)
+  - [Benefits Over Similar Tools](#benefits-over-similar-tools)
+- [Architecture Overview](#architecture-overview)
+  - [Modular Design](#modular-design)
+  - [Component Interaction](#component-interaction)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation Steps](#installation-steps)
+- [Usage Examples](#usage-examples)
+- [API Reference](#api-reference)
+- [Configuration Files and Customization](#configuration-files-and-customization)
+- [Guide to the Settings Tab in ErgoMonitor GUI](#guide-to-the-settings-tab-in-ergomonitor-gui)
+- [Extending ErgoMonitor](#extending-ergomonitor)
+- [Contributing to ErgoMonitor](#contributing-to-ergomonitor)
+- [Troubleshooting and FAQs](#troubleshooting-and-faqs)
+- [Security Policy](#security-policy)
+- [License](#license)
+- [Acknowledgements and Credits](#acknowledgements-and-credits)
+- [Contact Information](#contact-information)
+
 # ErgoMonitor (Alpha 0.1)
 
 ErgoMonitor sprang from a unique collaboration between myself, [Protoncracker](https://github.com/Protoncracker), and [SamuelSchutz13](https://github.com/SamuelSchutz13). My ambition was to craft a tool that acts as both a daily health-lookup for users and a robust assistant for professionals needing tools and detailed analytics. SamuelSchutz13, meanwhile, was developing a monitoring solution to streamline and perfect his own workflow. Discovering the complementary nature of our projects, we decided to merge them, creating a tool greater than the sum of its parts.
