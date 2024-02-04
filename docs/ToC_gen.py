@@ -7,7 +7,7 @@ def generate_toc(filepath):
             if line.startswith('#'):
                 indent_level = line.count('#') - 1
                 title = line.strip('#').strip()
-                slug = title.lower().replace(' ', '-').replace('/', '').replace('(', '').replace(')', '')
+                slug = title.lower().replace(' ', '-').replace('/', '').replace('(', '').replace(')', '').replace(':', '').replace(',', '').replace('.', '')
                 toc.append(('    ' * indent_level) + f"- [{title}](#{slug})")
     return toc
 
