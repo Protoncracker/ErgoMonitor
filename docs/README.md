@@ -151,6 +151,7 @@ If you're ready for a more hands-on approach or need the development version, fo
 ### Prerequisites
 
 Before you begin, ensure your system meets the following requirements:
+- **Operating System**: Compatible with Windows 10 (mainly), macOS 10.14+ (supposed), and Linux distributions like Ubuntu 18.04+. In the future we aim to have it working for Android and iOS distros.
 - **Git**: Essential for cloning the repository.
 - **Python 3.6 or newer**: ErgoMonitor is built on Python, ensuring compatibility and ease of use.
 
