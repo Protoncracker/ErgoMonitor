@@ -155,6 +155,8 @@ Before you begin, ensure your system meets the following requirements:
 - **Git**: Essential for cloning the repository.
 - **Python 3.6 or newer**: ErgoMonitor is built on Python, ensuring compatibility and ease of use.
 
+No hardware issues or specific prerequisites found so far.
+
 
 ### Step 1: Clone the Repository
 
