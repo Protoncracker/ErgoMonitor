@@ -1,3 +1,13 @@
+# ErgoMonitor (Alpha 0.1)
+
+<img src="../misc/ErgoMonitor.png" width="50%" alt="ErgoMonitor Interface">
+
+ErgoMonitor sprang from a unique collaboration between myself, [Protoncracker](https://github.com/Protoncracker), and [SamuelSchutz13](https://github.com/SamuelSchutz13). My ambition was to craft a tool that acts as both a daily health-lookup for users and a robust assistant for professionals needing tools and detailed analytics. SamuelSchutz13, meanwhile, was developing a monitoring solution to streamline and perfect his own workflow. Discovering the complementary nature of our projects, we decided to merge them, creating a tool greater than the sum of its parts.
+
+The essence of the name "ErgoMonitor" combines thoughtful design with practical function. "Ergo," with its roots in Latin, suggests a logical progression — "therefore" or "hence" — embodying the tool's foundational principle of deriving actionable insights through logical analysis. This term, often associated with reasoning and causality, reflects our aim for a tool that not only monitors but interprets and advises based on the data it observes. The "Monitor" component straightforwardly points to the application's core functionality: vigilant oversight of system performance and security.
+
+Thus, ErgoMonitor is more than its name — it's a testament to our goal of delivering a monitoring solution that empowers users with clarity, foresight, and control over their digital environments, seamlessly blending the wisdom of traditional logic with the needs of modern technology.
+
 # Table of Contents
 - [ErgoMonitor (Alpha 0.1)](#ergomonitor-alpha-01)
     - [Detailed Overview](#detailed-overview)
@@ -84,15 +94,6 @@
         - [Support and Inquiries](#support-and-inquiries)
         - [Issue Reporting and Feature Requests](#issue-reporting-and-feature-requests)
         - [Community and Discussions](#community-and-discussions)
-
-
-# ErgoMonitor (Alpha 0.1)
-
-ErgoMonitor sprang from a unique collaboration between myself, [Protoncracker](https://github.com/Protoncracker), and [SamuelSchutz13](https://github.com/SamuelSchutz13). My ambition was to craft a tool that acts as both a daily health-lookup for users and a robust assistant for professionals needing tools and detailed analytics. SamuelSchutz13, meanwhile, was developing a monitoring solution to streamline and perfect his own workflow. Discovering the complementary nature of our projects, we decided to merge them, creating a tool greater than the sum of its parts.
-
-The essence of the name "ErgoMonitor" combines thoughtful design with practical function. "Ergo," with its roots in Latin, suggests a logical progression — "therefore" or "hence" — embodying the tool's foundational principle of deriving actionable insights through logical analysis. This term, often associated with reasoning and causality, reflects our aim for a tool that not only monitors but interprets and advises based on the data it observes. The "Monitor" component straightforwardly points to the application's core functionality: vigilant oversight of system performance and security.
-
-Thus, ErgoMonitor is more than its name — it's a testament to our goal of delivering a monitoring solution that empowers users with clarity, foresight, and control over their digital environments, seamlessly blending the wisdom of traditional logic with the needs of modern technology.
 
 ## Detailed Overview
 
