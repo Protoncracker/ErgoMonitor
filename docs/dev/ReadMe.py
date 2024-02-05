@@ -1,164 +1,47 @@
-import difflib
+from argparse import ArgumentParser
+from modules.generate_toc import GenerateTOC
+from modules.add_back_links import AddBackLinks
+from modules.remove_back_links import RemoveBackLinks
+from modules.delete_toc_section import DeleteTOCSection
+from modules.add_generated_toc import AddGeneratedTOC
+from modules.compare_files import CompareFiles
 
-class ReadmeManager:
-    """
-    A class to manage README.md file operations such as generating a table of contents,
-    adding back to table of contents links, removing existing back links, and managing the TOC section.
-    """
+def main():
+    parser = ArgumentParser(description='This script manages operations on a README.md file, including generating a ToC, managing back-to-ToC links, and comparing files for differences.')
+    parser.add_argument('-g', '--generate-toc', action='store_true', help='Generates a markdown ToC based on header tags found in the README.md. Useful for large READMEs to improve navigation.')
+    parser.add_argument('-a', '--add-back-links', nargs='?', const="[🔙 Back to ToC](#table-of-contents)", type=str, metavar='BACK_LINK_TEXT', help='Adds a custom "Back to ToC" link before each heading level 2 and beyond. Defaults to "[🔙 Back to ToC](#table-of-contents)".')
+    parser.add_argument('-r', '--remove-back-links', action='store_true', help='Removes all existing "Back to ToC" links from the README.md. Use this to clean up or update links as needed.')
+    parser.add_argument('-d', '--delete-toc-section', action='store_true', help='Removes the entire ToC section from the README.md. Useful for regenerating or removing outdated ToC sections.')
+    parser.add_argument('-t', '--add-generated-toc', action='store_true', help='Inserts a newly generated ToC immediately after the first section marked by a primary heading in the README.md. Ideal for updating the ToC without manual editing.')
+    parser.add_argument('-c', '--compare-files', nargs=2, metavar=('FILE1', 'FILE2'), help='Compares two markdown files line by line and outputs the differences. Useful for identifying changes between document versions.')
+    parser.add_argument('-f', '--filepath', type=str, default='README.md', help='Specifies the path to the README.md to be operated on. Defaults to "README.md" in the current directory if not specified.')
     
-    def __init__(self, filepath='README.md'):
-        """
-        Initializes the ReadmeManager with a specific README.md file path.
+    args = parser.parse_args()
+    
+    if args.generate_toc:
+        toc_generator = GenerateTOC(args.filepath)
+        toc = toc_generator.generate()
+        print('\n'.join(toc))
         
-        Args:
-            filepath (str): Path to the README.md file. Defaults to 'README.md'.
-        """
-        self.filepath = filepath
-        self.back_to_toc_line = "[🔙 Back to Table of Contents](#table-of-contents)\n"
+    if args.add_back_links is not None:
+        back_link_adder = AddBackLinks(args.filepath, args.add_back_links)
+        back_link_adder.add()
+    
+    if args.remove_back_links:
+        back_link_remover = RemoveBackLinks(args.filepath, args.add_back_links)
+        back_link_remover.remove()
 
-    def generate_toc(self):
-        """
-        Generates a markdown table of contents for the README.md file based on header tags.
-        
-        Returns:
-            list: A list of markdown links representing the table of contents.
-        """
-        toc = []
-        with open(self.filepath, 'r', encoding='utf-8') as file:
-            for line in file:
-                if line.startswith('#'):
-                    indent_level = line.count('#') - 1
-                    title = line.strip('#').strip()
-                    slug = title.lower().replace(' ', '-').replace('/', '').replace('(', '').replace(')', '').replace(':', '').replace(',', '').replace('.', '')
-                    toc.append(('    ' * indent_level) + f"- [{title}](#{slug})")
-        return toc
+    if args.delete_toc_section:
+        toc_section_deleter = DeleteTOCSection(args.filepath)
+        toc_section_deleter.delete()
 
-    def add_back_links(self):
-        """
-        Adds a 'Back to Table of Contents' link before each heading level 2 and beyond,
-        starting after the first occurrence of such a heading.
-        """
-        new_content = []
-        seen_first_heading = False  # Flag to track the first occurrence of a ## heading
-        with open(self.filepath, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
+    if args.add_generated_toc:
+        toc_adder = AddGeneratedTOC(args.filepath)
+        toc_adder.add()
 
-        for i, line in enumerate(lines):
-            # Check if the line is a secondary heading (##) or beyond (###, ####, etc.)
-            if line.startswith('##'):
-                if seen_first_heading:
-                    # Add the back to TOC line if it's not the first ## heading
-                    if i == 0 or lines[i-1].strip() != self.back_to_toc_line.strip():
-                        new_content.append(self.back_to_toc_line)
-                else:
-                    # Mark that the first ## heading has been seen
-                    seen_first_heading = True
-            new_content.append(line)
+    if args.compare_files:
+        file_comparer = CompareFiles(*args.compare_files)
+        file_comparer.compare()
 
-        with open(self.filepath, 'w', encoding='utf-8') as file:
-            file.writelines(new_content)
-
-
-    def remove_back_links(self):
-        """
-        Removes all existing back to table of contents links from the README.md file.
-        """
-        with open(self.filepath, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
-
-        new_content = [line for line in lines if line.strip() != self.back_to_toc_line.strip()]
-
-        with open(self.filepath, 'w', encoding='utf-8') as file:
-            file.writelines(new_content)
-
-    def delete_toc_section(self):
-        """
-        Correctly identifies and removes the Table of Contents section from the README.md file,
-        including any content between "# Table of Contents" and the next section marked by "#".
-        """
-        with open(self.filepath, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
-
-        # Initialize flags and container for updated content
-        in_toc = False
-        new_content = []
-
-        for line in lines:
-            if line.strip().startswith('# Table of Contents'):
-                in_toc = True  # Mark the start of the TOC section
-                continue  # Skip adding this line to new content
-            if in_toc and line.startswith('#'):
-                in_toc = False  # Found the next section, mark end of TOC
-            if not in_toc:
-                new_content.append(line)  # Add lines outside TOC section
-
-        # Write the modified content back to the README.md
-        with open(self.filepath, 'w', encoding='utf-8') as file:
-            file.writelines(new_content)
-
-
-    def add_generated_tocx(self):
-        """
-        Inserts the generated table of contents immediately after the end of the first section 
-        marked by a primary heading ('#') in the README.md file. 
-        """
-        toc = self.generate_toc()
-        toc_content = "# Table of Contents\n" + '\n'.join(toc) + '\n\n'
-
-        with open(self.filepath, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
-
-        # Initialize variables to track the first primary heading and subsequent section
-        primary_heading_count = 0
-        insert_index = None
-
-        for i, line in enumerate(lines):
-            if line.startswith('# '):
-                primary_heading_count += 1
-                if primary_heading_count == 2:  # Identify the end of the section following the first primary heading
-                    insert_index = i
-                    break
-
-        if insert_index is not None:
-            # Reconstruct the file content with the new TOC placement
-            updated_content = lines[:insert_index] + [toc_content] + lines[insert_index:]
-            with open(self.filepath, 'w', encoding='utf-8') as file:
-                file.writelines(updated_content)
-
-    def compare_files(self, file_path1, file_path2):
-        """
-        Compares two files line by line and prints the differences.
-
-        Args:
-        file_path1 (str): The path to the first file for comparison.
-        file_path2 (str): The path to the second file for comparison.
-
-        Returns:
-        None: This function prints the differences between the two files.
-        """
-        # Open and read the files to compare
-        with open(file_path1, 'r', encoding='utf-8') as file1, open(file_path2, 'r', encoding='utf-8') as file2:
-            file1_lines = file1.readlines()
-            file2_lines = file2.readlines()
-
-        # Use difflib to get the differences between the two file contents
-        diff = difflib.unified_diff(
-            file1_lines, file2_lines, 
-            fromfile=file_path1, 
-            tofile=file_path2, 
-            lineterm=''
-        )
-
-        # Print the differences
-        for line in diff:
-            print(line)
-
-# Example of using the ReadmeManager class:
-# manager = ReadmeManager('README.md')
-# toc = manager.generate_toc()
-# print('\n'.join(toc))
-# manager.add_back_links()
-# manager.remove_back_links()
-# manager.delete_toc_section()
-# manager.add_generated_toc()
-# manager.compare_files('README.md', 'READMEc.md')
+if __name__ == "__main__":
+    main()
