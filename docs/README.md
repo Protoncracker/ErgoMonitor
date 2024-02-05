@@ -99,7 +99,6 @@ Thus, ErgoMonitor is more than its name — it's a testament to our goal of deli
 
 ErgoMonitor was conceived with a clear mission: to address the growing complexity and multifaceted challenges of modern computer systems. In today’s digital age, users from casual enthusiasts to seasoned professionals face the daunting task of maintaining optimal system health and security. The motivation behind ErgoMonitor's creation was to demystify the process of system monitoring and maintenance, making it accessible and actionable for everyone.
 
-[🔙](#table-of-contents)
 ### The Problems It Aims to Solve
 
 ErgoMonitor tackles a variety of critical issues that plague computer users:
@@ -113,7 +112,6 @@ ErgoMonitor tackles a variety of critical issues that plague computer users:
 - **Accessibility**: There's a gap in the market for a tool that caters not just to IT professionals but also to everyday users who wish to keep their systems running smoothly without deep technical expertise. ErgoMonitor bridges this gap by offering an intuitive interface, straightforward guidance, and automated features that empower users of all skill levels to maintain and optimize their systems. This democratizes access to sophisticated system maintenance capabilities, making digital hygiene and optimization accessible to everyone.
 
 
-[🔙](#table-of-contents)
 ### Target Users
 
 ErgoMonitor is engineered to meet the vast userbase of computer users and nuanced demands of specialized IT roles, enhancing their capacity to manage, secure, and optimize computing environments:
@@ -150,7 +148,6 @@ Whether you are looking to optimize your gaming experience, secure sensitive dat
 
 ErgoMonitor is designed to seamlessly integrate into the daily routines of its users, providing a robust suite of features that cater to a wide spectrum of system monitoring needs. Here's a deeper look into its core functionalities and the distinct benefits it offers over similar tools in the market:
 
-[🔙](#table-of-contents)
 ### Core Functionality and Benefits
 
 - **Real-Time System Monitoring**: Offering immediate insights into system performance, ErgoMonitor keeps you informed on critical metrics such as CPU usage, memory allocation, disk activity, and network status. This real-time data allows users to quickly identify and address issues that could impact system functionality and efficiency. By keeping a constant eye on these metrics, ErgoMonitor ensures that users can react promptly to changes, maintaining optimal system performance.
@@ -161,7 +158,6 @@ ErgoMonitor is designed to seamlessly integrate into the daily routines of its u
 
 - **User-Friendly Interface**: Designed with intuitiveness in mind, ErgoMonitor's interface allows users of all skill levels to easily navigate and understand the insights provided. The dashboard presents information in a clear, concise manner, with visual aids such as graphs and color-coded alerts to highlight key data points. This user-friendly approach ensures that even users with minimal technical knowledge can effectively monitor their system's health and respond to issues. ErgoMonitor democratizes access to complex system monitoring tools, making it easier for everyone to maintain a healthy and efficient computing environment.
 
-[🔙](#table-of-contents)
 ### Benefits Over Similar Tools
 
 ErgoMonitor distinguishes itself by offering several key advantages that set it apart from existing system monitoring and security tools:
@@ -181,7 +177,6 @@ ErgoMonitor distinguishes itself by offering several key advantages that set it 
 
 ErgoMonitor is architected to provide a comprehensive and intuitive monitoring solution, combining real-time performance tracking with advanced security features and optimization recommendations. Its design emphasizes modularity, high performance, interoperability, and user accessibility, ensuring a seamless experience from data collection to insight generation.
 
-[🔙](#table-of-contents)
 ### Modular Design
 
 ErgoMonitor's architecture is built around several core modules, each dedicated to a specific function within the monitoring ecosystem:
@@ -194,7 +189,6 @@ ErgoMonitor's architecture is built around several core modules, each dedicated 
 
 - **User Interface (UI)**: ErgoMonitor's UI is designed for clarity and ease of use, presenting insights and recommendations in a digestible format. It allows users to interact with the system, customize monitoring preferences, and implement suggested optimizations.
 
-[🔙](#table-of-contents)
 ### Component Interaction
 
 - **Data Flow**: At the heart of ErgoMonitor's operation is the continuous data flow from the Data Collection Module to the Analysis Engine. This stream of real-time system metrics is the basis for all further analysis and recommendation generation.
@@ -203,7 +197,6 @@ ErgoMonitor's architecture is built around several core modules, each dedicated 
 
 - **User Feedback Loop**: Users interact with the system through the UI, adjusting settings based on personal preferences or following up on recommendations. This feedback loop allows for a customized monitoring experience and ensures that the system adapts to the user's needs.
 
-[🔙](#table-of-contents)
 ### Visual Representation
 
 *For embedding a diagram in markdown, once created and hosted the flowchart image:*
@@ -220,7 +213,6 @@ For those who prefer a quick start without delving into Python installation and 
 
 If you're ready for a more hands-on approach or need the development version, follow these steps to clone the repository, install dependencies, and run the application for the first time.
 
-[🔙](#table-of-contents)
 ### Prerequisites
 
 Before you begin, ensure your system meets the following requirements:
@@ -231,7 +223,6 @@ Before you begin, ensure your system meets the following requirements:
 No hardware issues or other specific hardware prerequisites found so far. The Release version doesn't need python nor git preinstalled.
 
 
-[🔙](#table-of-contents)
 ### Step 1: Clone the Repository
 
 Start by cloning the ErgoMonitor repository to your local machine. Open a terminal window and execute the following command:
@@ -242,7 +233,6 @@ git clone https://github.com/Protoncracker/ErgoMonitor.git
 
 This clones the repository into your current directory, creating a local copy of ErgoMonitor.
 
-[🔙](#table-of-contents)
 ### Step 2: Navigate to the Project Directory
 
 Switch to the ErgoMonitor directory with the command:
@@ -253,7 +243,6 @@ cd ErgoMonitor
 
 You are now in the root directory of the ErgoMonitor project. Good job.
 
-[🔙](#table-of-contents)
 ### Step 3: Set Up the Development Environment
 
 (Optional) For an organized setup, especially if working on multiple Python projects, setting up a virtual environment is recommended:
@@ -265,7 +254,6 @@ source env/bin/activate  # On Windows, use `env\Scripts\activate`
 
 After activating the virtual environment, proceed with installing dependencies as described in Step 4.
 
-[🔙](#table-of-contents)
 ### Step 4: Install Dependencies
 
 ErgoMonitor relies on various Python packages. Install them by executing:
@@ -276,7 +264,6 @@ pip install -r requirements.txt
 
 This reads the `requirements.txt` file and installs the necessary Python packages, ensuring ErgoMonitor has everything it needs to run smoothly.
 
-[🔙](#table-of-contents)
 ### Step 5: Run ErgoMonitor
 
 With the dependencies installed, you're now ready to run ErgoMonitor. Start the application with the following command:
@@ -287,7 +274,6 @@ python ErgoMonitor.py
 
 This command launches ErgoMonitor, and you should now be able to see the user interface and start exploring its features.
 
-[🔙](#table-of-contents)
 ### Next Steps
 
 - Explore the ErgoMonitor UI to familiarize yourself with its features and capabilities.
@@ -302,7 +288,6 @@ Congratulations, you've successfully set up your development environment for Erg
 
 Dive into the depth of ErgoMonitor with these enriched scenarios, designed to guide you through its extensive capabilities for system performance, security assessments, and optimization insights.
 
-[🔙](#table-of-contents)
 ### Scenario 1: Identifying Performance Bottlenecks in the Performance Tab
 
 **Objective**: Diagnose and mitigate performance issues related to HDD, RAM, and CPU usage.
@@ -315,7 +300,6 @@ Dive into the depth of ErgoMonitor with these enriched scenarios, designed to gu
 
 *Visual aids, such as graphs and heat maps, provide an intuitive understanding of your system's performance landscape, making it easier to identify and address issues.*
 
-[🔙](#table-of-contents)
 ### Scenario 2: Enhancing System Security with VAPT Analysis
 
 **Objective**: Leverage the Vulnerability Assessment and Penetration Testing (VAPT) feature for an in-depth security review.
@@ -328,7 +312,6 @@ Dive into the depth of ErgoMonitor with these enriched scenarios, designed to gu
 
 *The Security tab's user-friendly interface simplifies the complex process of vulnerability assessment, making robust security practices accessible to all users.*
 
-[🔙](#table-of-contents)
 ### Scenario 3: Comprehensive System Review in the Overview Tab
 
 **Objective**: Obtain a holistic view of your system's health, performance, and security status.
@@ -341,7 +324,6 @@ Dive into the depth of ErgoMonitor with these enriched scenarios, designed to gu
 
 *The Overview tab acts as a command center, intuitively guiding users through the process of monitoring, analysis, and optimization, enriched with visual cues for immediate insight.*
 
-[🔙](#table-of-contents)
 ### Scenario 4: Advanced Customization and Developer Mode
 
 **Objective**: Unlock advanced settings for a tailored monitoring experience.
@@ -371,14 +353,12 @@ By offering a dual-layer approach to configuration—simplified settings for eve
 
 ErgoMonitor's API not only facilitates comprehensive system monitoring but also extends its capabilities through integration with external APIs for various applications, including trivia as climate data analysis. Detailed documentation on all API endpoints, including those for external integrations, is available in the [API Documentation](docs/API_DOCUMENTATION.md).
 
-[🔙](#table-of-contents)
 ### Quick Reference to Key API Endpoints
 
 NOTE: In order to use the ErgoMonitor's internal API system, you must have the **Insider API** setting configurated.
 
 Here's an overview of essential ErgoMonitor API endpoints, including examples of how to use them:
 
-[🔙](#table-of-contents)
 #### Retrieve System Metrics
 
 - **Endpoint**: `/api/system/metrics`
@@ -390,7 +370,6 @@ Here's an overview of essential ErgoMonitor API endpoints, including examples of
   curl -X GET http://localhost:8080/api/system/metrics
   ```
 
-[🔙](#table-of-contents)
 #### Initiate Security Scan
 
 - **Endpoint**: `/api/security/scan`
@@ -402,7 +381,6 @@ Here's an overview of essential ErgoMonitor API endpoints, including examples of
   curl -X POST http://localhost:8080/api/security/scan -d "type=full"
   ```
 
-[🔙](#table-of-contents)
 #### Execute Performance Optimization
 
 - **Endpoint**: `/api/performance/optimize`
@@ -414,7 +392,6 @@ Here's an overview of essential ErgoMonitor API endpoints, including examples of
   curl -X POST http://localhost:8080/api/performance/optimize
   ```
 
-[🔙](#table-of-contents)
 #### Modify Monitoring Settings
 
 - **Endpoint**: `/api/settings/update`
@@ -426,12 +403,10 @@ Here's an overview of essential ErgoMonitor API endpoints, including examples of
   curl -X POST http://localhost:8080/api/settings/update -d "setting=cpu_alert_threshold&value=75"
   ```
 
-[🔙](#table-of-contents)
 ### Integrating External APIs
 
 ErgoMonitor supports configuring external APIs for enhanced functionality, such as accessing climate data. Users can configure these integrations in the Python version of ErgoMonitor to incorporate data from various sources into their monitoring workflow.
 
-[🔙](#table-of-contents)
 #### Configuring External API Integration
 
 - **Objective**: To integrate an external climate data API for environmental monitoring.
@@ -450,7 +425,6 @@ For a comprehensive list of endpoints, in-depth configuration guides, and additi
 
 ErgoMonitor is engineered with flexibility and user customization in mind, employing a streamlined approach to configuration through two distinct types of configuration files: core files and terminal files. This section provides guidance on how to configure ErgoMonitor to meet your specific requirements, leveraging these configuration files.
 
-[🔙](#table-of-contents)
 ### Understanding Configuration Files
 
 ErgoMonitor simplifies its configuration process through the use of two primary file types, each serving a specific purpose in the application's setup and operation:
@@ -459,7 +433,6 @@ ErgoMonitor simplifies its configuration process through the use of two primary 
 
 - **Terminal Configuration Files**: These files are dedicated to the customization of the user interface and user-specific preferences. This includes visual themes, layout preferences, and any user-specific settings that affect how information is displayed and interacted with in the ErgoMonitor terminal interface.
 
-[🔙](#table-of-contents)
 ### Configuring Core Settings
 
 Core configuration files are located in the `configs/` directory and are essential for tailoring ErgoMonitor's functionality to your environment:
@@ -475,7 +448,6 @@ To modify core settings:
 - Follow the comments within each file as guidelines for permissible values and setting descriptions.
 - Save your changes and restart ErgoMonitor to apply them.
 
-[🔙](#table-of-contents)
 ### Configuring Terminal Settings
 
 Terminal configuration files focus on the ErgoMonitor's user interface and are also found within the `configs/` directory:
@@ -488,7 +460,6 @@ To adjust terminal settings:
 - Edit the settings to match your visual preferences and user interface requirements.
 - Ensure to save your changes and, if necessary, restart ErgoMonitor to see the effects of your adjustments.
 
-[🔙](#table-of-contents)
 ### Tips for Effective Configuration
 
 - **Backup Before Modifying**: Always create backups of configuration files before making changes. This precaution ensures you can revert to a previous state if needed.
@@ -502,13 +473,11 @@ By leveraging the distinction between core and terminal configuration files, Erg
 
 The Settings tab in the ErgoMonitor GUI is your central location for configuring the application to better meet your specific monitoring needs and preferences. This guide will walk you through accessing and using the Settings tab to customize ErgoMonitor's functionality.
 
-[🔙](#table-of-contents)
 ### Accessing the Settings Tab
 
 1. **Open ErgoMonitor**: Start the ErgoMonitor application on your device.
 2. **Navigate to the Settings Tab**: From the main dashboard of ErgoMonitor, locate and click on the `Settings` tab. This tab is usually found in the top menu or within a side navigation pane, depending on the layout of the GUI.
 
-[🔙](#table-of-contents)
 ### Navigating the Settings Tab
 
 The Settings tab is organized into various sections, each dedicated to a different aspect of the application's configuration:
@@ -525,7 +494,6 @@ The Settings tab is organized into various sections, each dedicated to a differe
   
 - **User Interface**: Customize the appearance of the ErgoMonitor GUI, including themes, color schemes, and layout options to enhance usability and visual appeal.
 
-[🔙](#table-of-contents)
 ### Modifying Settings
 
 To modify a setting within any section:
@@ -535,7 +503,6 @@ To modify a setting within any section:
 3. **Make Your Adjustment**: Depending on the setting, you may either toggle a switch, select from a dropdown menu, or enter a new value in a text field.
 4. **Apply Changes**: Look for an `Apply` or `Save` button near the bottom of the section or window. Click this button to save your changes.
 
-[🔙](#table-of-contents)
 ### Tips for Using the Settings Tab
 
 - **Explore All Sections**: Take the time to explore all sections within the Settings tab to fully understand the extent of customization available in ErgoMonitor.
@@ -550,7 +517,6 @@ By familiarizing yourself with the Settings tab and understanding how to navigat
 
 ErgoMonitor is designed to be a flexible and extensible platform, enabling developers to contribute new features, enhancements, and integrations. This guide provides an overview for developers looking to extend or contribute to ErgoMonitor, including extension points, plugin mechanisms, and best practices for development.
 
-[🔙](#table-of-contents)
 ### Understanding ErgoMonitor’s Architecture
 
 Before you begin extending ErgoMonitor, it’s important to have a good understanding of its architecture and design principles. ErgoMonitor is structured around modular components that handle different aspects of system monitoring, network management, security checks, and user interface functionalities.
@@ -559,7 +525,6 @@ Before you begin extending ErgoMonitor, it’s important to have a good understa
 - **Utility Modules**: Supportive modules that offer additional functionalities like data processing, disk management, and external API communication. These communicate between more than one another module.
 - **Terminal Interface**: The user interface component that interacts with the user, displaying information and accepting input.
 
-[🔙](#table-of-contents)
 ### Extension Points and Plugin Mechanisms
 
 ErgoMonitor supports extension through the following mechanisms:
@@ -568,7 +533,6 @@ ErgoMonitor supports extension through the following mechanisms:
 - **Configuration Files**: These files can be extended to include new settings for custom modules or features, enhancing the configurability of ErgoMonitor.
 - **Plugin Architecture (if applicable)**: If ErgoMonitor includes a plugin architecture, this allows developers to create standalone plugins that can be loaded into ErgoMonitor at runtime, offering new functionalities without altering the core application code.
 
-[🔙](#table-of-contents)
 ### Guidelines for Developing Extensions
 
 1. **Familiarize with the Codebase**: Start by understanding the existing codebase, focusing on the areas relevant to your extension or feature. The `DEVELOPER_GUIDE.md` document in the `docs/` directory is a good starting point.
@@ -583,7 +547,6 @@ ErgoMonitor supports extension through the following mechanisms:
 
 6. **Contribute Back**: If you believe your extension could benefit other ErgoMonitor users, consider contributing it back to the project. Follow the project’s contribution guidelines outlined in the `CONTRIBUTING.md` document.
 
-[🔙](#table-of-contents)
 ### Submitting Contributions
 
 To submit your extension or contribution to ErgoMonitor:
@@ -594,7 +557,6 @@ To submit your extension or contribution to ErgoMonitor:
 
 3. **Engage with the Community**: Be prepared to engage with the ErgoMonitor community during the PR review process. This may involve responding to feedback, making revisions, and participating in discussions.
 
-[🔙](#table-of-contents)
 ### Conclusion
 
 Extending ErgoMonitor offers developers an opportunity to contribute to a growing project while tailoring the application to meet specific needs. By adhering to the guidelines outlined above, your contributions can enhance ErgoMonitor’s capabilities and support its community of users.
@@ -606,7 +568,6 @@ We welcome contributions of all forms and encourage developers to share their in
 
 The ErgoMonitor project thrives on the contributions of our vibrant community. Whether you're a seasoned developer or someone just starting out, every bug fix, feature enhancement, and documentation update helps make ErgoMonitor more efficient, user-friendly, and feature-rich. Below, find detailed guidance on how you can contribute and what steps to follow.
 
-[🔙](#table-of-contents)
 ### Getting Started with Contributions
 
 1. **Explore and Identify**: Begin by thoroughly exploring ErgoMonitor's features and documentation. Identify areas you're interested in or think could benefit from improvement. This can range from performance enhancements, new feature proposals, to documentation updates.
@@ -615,7 +576,6 @@ The ErgoMonitor project thrives on the contributions of our vibrant community. W
 
 3. **Review Open Issues**: The ErgoMonitor GitHub repository's Issues section is a goldmine for contributors. It lists known bugs, feature requests, and discussions on future directions. Picking up an existing issue can be a great starting point.
 
-[🔙](#table-of-contents)
 ### Making Your Contribution
 
 1. **Fork the Repository**: Create a fork of ErgoMonitor on GitHub. This is your personal copy of the project where you can make changes without affecting the original codebase.
@@ -634,7 +594,6 @@ The ErgoMonitor project thrives on the contributions of our vibrant community. W
 
 8. **Submit a Pull Request (PR)**: Once your changes are complete, submit them through a PR against the ErgoMonitor main repository. Provide a detailed description of your changes and any additional context needed to understand your contribution.
 
-[🔙](#table-of-contents)
 ### Contribution Review Process
 
 Once your PR is submitted, it enters the review process:
@@ -645,7 +604,6 @@ Once your PR is submitted, it enters the review process:
   
 - **Approval and Merge**: After addressing any feedback and once your PR is approved by the reviewers, it will be merged into the ErgoMonitor codebase. Congratulations, you've successfully contributed to ErgoMonitor!
 
-[🔙](#table-of-contents)
 ### After Your Contribution
 
 - **Stay Engaged**: Contributions don't end with a merged PR. Stay engaged with the community to see how your contribution impacts users and to offer support or further improvements.
@@ -654,7 +612,6 @@ Once your PR is submitted, it enters the review process:
 
 - **Mentor Others**: Consider mentoring new contributors, sharing your experience, and helping them navigate the contribution process.
 
-[🔙](#table-of-contents)
 ### More Information
 
 For more detailed guidelines, including how to report bugs, request features, or update documentation, please refer to our comprehensive [CONTRIBUTING.md](./CONTRIBUTING.md) document. This document also covers the project's coding standards, PR guidelines, and how to set up your development environment for ErgoMonitor.
@@ -666,62 +623,50 @@ Contributing to ErgoMonitor is more than just code. It's about building a tool t
 
 This section delves into common challenges and inquiries users may encounter while using ErgoMonitor, offering detailed solutions and troubleshooting steps. For an exhaustive compilation of questions and answers, please consult our [FAQ.md](./FAQ.md) document.
 
-[🔙](#table-of-contents)
 ### Common Issues and Solutions
 
-[🔙](#table-of-contents)
 #### 1. ErgoMonitor Fails to Start
 
 - **Solution**: Begin by verifying the installation of all required dependencies. Re-run the installation commands to ensure nothing was missed. Check that your Python environment is compatible with the version required by ErgoMonitor. Inspect the `logs/` directory for any error messages that could indicate the problem. If errors are related to missing modules or libraries, installing them via pip may resolve the issue.
 
-[🔙](#table-of-contents)
 #### 2. Network Monitoring Not Working
 
 - **Solution**: Ensure ErgoMonitor has the correct permissions to monitor network interfaces. Some systems may require running the application with administrative rights (e.g., using `sudo` on Linux). Verify the network interface configurations in the `network.config.json` file within the `configs/` directory are accurate and match your system's network setup. If changes were made, restart ErgoMonitor for them to take effect.
 
-[🔙](#table-of-contents)
 #### 3. High CPU Usage
 
 - **Solution**: Adjusting the monitoring frequency in the `core.main.json` configuration file can help mitigate high CPU usage. Look for settings related to scan intervals and reduce their frequency. For users with custom extensions or scripts, ensure there are no inefficient loops or resource-intensive operations running unchecked. Profiling tools can help identify hotspots in custom code.
 
-[🔙](#table-of-contents)
 #### 4. Alerts Not Being Received
 
 - **Solution**: Double-check the configuration of your notification settings in the `terminal.main.json` or relevant configuration files. Verify that any external communication services (e.g., email servers, webhook endpoints) are correctly set up and operational. Network connectivity issues can also interfere with sending alerts, so ensure your internet connection is stable.
 
-[🔙](#table-of-contents)
 #### 5. Incorrect Locale or Timezone Settings
 
 - **Solution**: The `core.locale.json` file within the `configs/` directory allows you to specify locale and timezone settings. Ensure these are correctly configured to match your geographical location and system settings. Misconfigurations here can lead to incorrect timestamps in logs or data misinterpretation.
 
-[🔙](#table-of-contents)
 #### 6. Custom Extensions or Plugins Not Loading
 
 - **Solution**: Confirm compatibility of your custom extensions or plugins with the current version of ErgoMonitor. Review the documentation for any specific requirements or dependencies that must be met. The ErgoMonitor log files can offer insights into why an extension or plugin failed to load, including missing dependencies or conflicts with existing modules.
 
-[🔙](#table-of-contents)
 #### 7. Difficulty Connecting to External APIs
 
 - **Solution**: If ErgoMonitor is experiencing issues connecting to external APIs, check your firewall and internet settings to ensure outbound connections are allowed. Verify the API keys and configuration settings in the `external_communicator.py` file or respective configuration sections are correct. API providers may have updated their endpoints or authentication methods, so ensure your settings are up-to-date.
 
-[🔙](#table-of-contents)
 #### 8. Upgrades Resulting in Configuration Errors
 
 - **Solution**: After upgrading ErgoMonitor, it's possible for configuration files to become incompatible. Compare your configuration files with the latest examples provided in the repository. Make necessary adjustments to align with new or changed settings. Backing up your configuration files before performing an upgrade is recommended to safeguard custom settings.
 
-[🔙](#table-of-contents)
 ### General Troubleshooting Tips
 
 - **Log Analysis**: The `logs/` directory is an excellent resource for troubleshooting. Look for error messages or warnings that might indicate what's wrong.
 - **Update ErgoMonitor**: Ensure you're running the latest version of ErgoMonitor. Updates often contain bug fixes and performance improvements.
 - **Community Support**: The ErgoMonitor community is a great resource. Use forums, chat channels, or the issue tracker to seek advice or share solutions.
 
-[🔙](#table-of-contents)
 ### Additional Resources
 
 For more nuanced problems, configuration guidance, and advanced troubleshooting, the [FAQ.md](./FAQ.md) document is a treasure trove of information. It covers a broad spectrum of inquiries, from elementary usage questions to intricate technical challenges.
 
-[🔙](#table-of-contents)
 ### Still Need Help?
 
 If you're facing an issue not addressed in this guide or in the FAQ, don't hesitate to reach out to the ErgoMonitor community or support team for assistance. You're also encouraged to report bugs or suggest features through the project's issue tracker.
@@ -734,7 +679,6 @@ Remember, the ErgoMonitor community is dedicated to supporting each other. We're
 
 ErgoMonitor is dedicated to maintaining the highest standards of security in our software and operational practices. Our commitment to security involves comprehensive measures designed to protect our systems, data, and the privacy of our users. Below is an overview of the core components of our security policy, with a detailed explanation available in our [SECURITY.md](./SECURITY.md) document.
 
-[🔙](#table-of-contents)
 ### Comprehensive Security Measures
 
 - **Continuous Vulnerability Assessment**: We employ continuous vulnerability scanning and penetration testing to identify and address security vulnerabilities and threats before they can be exploited.
@@ -749,7 +693,6 @@ ErgoMonitor is dedicated to maintaining the highest standards of security in our
 
 - **Security Training**: Our team undergoes regular security training to stay updated on the latest threats and security practices, ensuring that we are equipped to protect our systems and data effectively.
 
-[🔙](#table-of-contents)
 ### Reporting Security Vulnerabilities
 
 We actively encourage the security community and all users to report potential security vulnerabilities to us. Our [SECURITY.md](./SECURITY.md) document outlines the process for reporting vulnerabilities, ensuring they are communicated responsibly and effectively:
@@ -762,7 +705,6 @@ We actively encourage the security community and all users to report potential s
 
 - **Responsible Disclosure**: We work closely with reporters to coordinate the disclosure of vulnerabilities, ensuring that fixes are in place before any public announcement is made to protect our users.
 
-[🔙](#table-of-contents)
 ### Our Commitment to Security
 
 Security is not just a policy but a fundamental aspect of our culture at ErgoMonitor. We are committed to:
@@ -773,7 +715,6 @@ Security is not just a policy but a fundamental aspect of our culture at ErgoMon
   
 - **Continuous Improvement**: Our security posture is continuously evolving to address new threats and incorporate the latest security technologies and practices.
 
-[🔙](#table-of-contents)
 ### Conclusion
 
 ErgoMonitor’s security measures and policies are designed to provide a secure environment for all our users. We take security concerns seriously and are committed to responding swiftly to vulnerabilities. For more detailed information on our security policies and how to report security vulnerabilities, please refer to our [SECURITY.md](./SECURITY.md) document.
@@ -785,7 +726,6 @@ Together, with the help of the community and adherence to our security policies,
 
 ErgoMonitor is distributed under the ProtonLicense. This free, copyleft license is designed to ensure that ErgoMonitor and any derivative works remain open and free, encouraging innovation and collaboration within the community while safeguarding the rights of users and contributors.
 
-[🔙](#table-of-contents)
 ### Key Highlights
 
 - **Usage**: Users can freely use ErgoMonitor for both personal and commercial purposes, under the terms of the ProtonLicense.
@@ -801,32 +741,26 @@ For additional information on licensing, including any exceptions or granted per
 
 The development of ErgoMonitor has been a journey of collaboration, learning, and innovation. While we are still in the early stages and look forward to welcoming contributors and integrating third-party solutions, we want to take a moment to acknowledge the potential and foundational supports that make a project like ErgoMonitor possible.
 
-[🔙](#table-of-contents)
 ### Open Source Community
 
 We extend our heartfelt thanks to the open source community at large. The tools, libraries, and frameworks developed and maintained by countless volunteers around the globe are the bedrock upon which ErgoMonitor stands. The spirit of sharing and collaboration that defines the open source ecosystem is a source of constant inspiration for us.
 
-[🔙](#table-of-contents)
 ### Future Contributors
 
 Though we are at the beginning of our journey and have yet to welcome our first official contributors, we anticipate the diverse ideas, perspectives, and expertise that each will bring to ErgoMonitor. Our project will thrive on your contributions, and we look forward to recognizing each of you in the future updates of this document.
 
-[🔙](#table-of-contents)
 ### Third-Party Libraries and Tools
 
 While specific third-party libraries and tools have not yet been integrated into ErgoMonitor, the open source software community offers an abundance of resources that we are excited to explore. We acknowledge the incredible work done by developers of such tools and libraries that will eventually help enhance ErgoMonitor's functionality, performance, and user experience.
 
-[🔙](#table-of-contents)
 ### Educational Institutions and Research
 
 The theoretical and practical advancements in the fields of computer science, network security, and system monitoring developed in academic and research institutions provide the foundational knowledge upon which projects like ErgoMonitor are built. We are grateful for the ongoing research and publications that continue to push the boundaries of what is possible.
 
-[🔙](#table-of-contents)
 ### Family, Friends, and Supporters
 
 Last but certainly not least, we express our gratitude to our families, friends, and the broader community of supporters who believe in the vision of ErgoMonitor. Your encouragement, feedback, and support are invaluable as we continue to develop and improve ErgoMonitor.
 
-[🔙](#table-of-contents)
 ### Conclusion
 
 As ErgoMonitor evolves, this section will grow to include the names of individual contributors, the specific third-party libraries that become part of our ecosystem, and any other resources that play a significant role in our development process. We are committed to recognizing and celebrating the contributions that help shape ErgoMonitor into the tool it is destined to become.
@@ -838,19 +772,16 @@ Thank you to everyone who has contributed to the journey so far and to those who
 
 The ErgoMonitor team values open communication and is dedicated to providing the support you need to make the most out of our tool. Here are several channels through which you can reach us for support, report issues, or engage in discussions about ErgoMonitor.
 
-[🔙](#table-of-contents)
 ### Support and Inquiries
 
 - **Email Support**: For direct support or any inquiries, email us at `support@example.com`. We aim to respond to all queries promptly. (For now we're poor and don't have an email. Sorry.)
 
 - **Documentation**: Visit our comprehensive [Documentation](https://github.com/Protoncracker/ErgoMonitortree/main/docs) for guides, how-tos, and FAQs that may answer your questions.
 
-[🔙](#table-of-contents)
 ### Issue Reporting and Feature Requests
 
 - **GitHub Issues**: Encounter a bug or have a feature suggestion? Please file a detailed report at our [GitHub Issues page](https://github.com/ErgoMonitor/project/issues). This helps us track and address issues efficiently, benefiting the entire community.
 
-[🔙](#table-of-contents)
 ### Community and Discussions
 
 - **Forums**: Join the conversation on our [Community Forums](https://forums.ergomonitor.example.com). It's a space for discussions, sharing best practices, and getting advice from fellow users. (For now we don't have forums too. Sorry.)
