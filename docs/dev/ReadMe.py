@@ -18,10 +18,17 @@ def main():
     
     args = parser.parse_args()
 
-    # Defina a variável btt para usar em operações de adição/remoção de links de retorno
     btt = args.add_back_links if args.add_back_links is not None else args.remove_back_links
     if btt is None:
-        btt = "[🔙 Back to ToC](#table-of-contents)"  # Valor padrão caso nenhum seja fornecido
+        btt = "[🔙 Back to ToC](#table-of-contents)"
+        
+    if args.remove_back_links is not None:
+        back_link_remover = RemoveBackLinks(args.filepath, btt)
+        back_link_remover.remove()
+
+    if args.delete_toc_section:
+        toc_section_deleter = DeleteTOCSection(args.filepath)
+        toc_section_deleter.delete()
 
     if args.generate_toc:
         toc_generator = GenerateTOC(args.filepath)
@@ -32,14 +39,6 @@ def main():
         back_link_adder = AddBackLinks(args.filepath, btt)
         back_link_adder.add()
     
-    if args.remove_back_links is not None:
-        back_link_remover = RemoveBackLinks(args.filepath, btt)
-        back_link_remover.remove()
-
-    if args.delete_toc_section:
-        toc_section_deleter = DeleteTOCSection(args.filepath)
-        toc_section_deleter.delete()
-
     if args.add_generated_toc:
         toc_adder = AddGeneratedTOC(args.filepath)
         toc_adder.add()
