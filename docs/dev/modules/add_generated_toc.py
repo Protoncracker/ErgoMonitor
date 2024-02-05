@@ -1,4 +1,4 @@
-from generate_toc import GenerateTOC
+from .generate_toc import GenerateTOC
 
 class AddGeneratedTOC:
     """
